@@ -1,0 +1,134 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: rgb(245, 245, 220);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+#writtingText {
+  width: 50vw;
+  height: 30vh;
+  font-size: 1.3rem;
+  background-color: #f5f5f5;
+  border: none;
+  box-shadow: 11px 13px 12px rgb(0 0 0 / 50%);
+  border-radius: 20px;
+  padding: 20px;
+  resize: none;
+}
+#writtingText:focus {
+  outline: none;
+}
+.sentenceRandom {
+  height: auto;
+  position: relative;
+  margin: 10px 0px 30px 0px;
+  background-color: darkgray;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 1.3rem;
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  user-select: none;
+}
+.center {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start,.change {
+  position: relative;
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(77, 77, 153);
+  color: whitesmoke;
+  border-radius: 10px;
+  margin: auto;
+  top: 40px;
+  outline: none;
+  width: 100px;
+}
+
+.change {
+  top: 70px;
+  width: 15%;
+  display: none;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+  text-decoration: underline;
+}
+.timer {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 50px;
+  width: 150px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.table {
+  display: none;
+  height: auto;
+  border: 1px solid black;
+  width: auto;
+  border-radius: 20px;
+  box-shadow: 18px -19px 3px rgb(0 0 0 / 35%);
+  background-color: cornsilk;
+}
+.table tr th {
+  padding: 0px 95px;
+  font-size: 26px;
+}
+.table tr td {
+  padding: 0px 95px;
+  font-size: 26px;
+  position: relative;
+  left: 65px;
+}
+.rulesDiv {
+  z-index: 2;
+  height: auto;
+  width: 300px;
+  position: relative;
+  left: 587px;
+  bottom: 240px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 18px -19px 3px rgb(0 0 0 / 35%);
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.rulesDiv ul li {
+  margin: 10px 0px;
+}
+#cross {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+button,
+i {
+  cursor: pointer;
+}
